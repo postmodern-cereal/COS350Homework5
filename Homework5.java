@@ -50,6 +50,7 @@ class Homework5
 
     public void printPoles(LinkedList<Triple> lines)
     {
+        System.out.println(lines.size());
         Collections.sort(lines, new TripleComparator());
         while(lines.size() > 0)
         {
@@ -59,6 +60,7 @@ class Homework5
 
     public static void main(String[] args)
     {
+
         Homework5 h5 = new Homework5();
         LinkedList<Integer> poles = new LinkedList<Integer>();
         Scanner scan = new Scanner(System.in);
